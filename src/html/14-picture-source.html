@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko-kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>picture, source 요소</title>
+  </head>
+  <body>
+    <img
+      src="/src/assets/logo/netflix@1x.png"
+      alt="넷플릭스"
+      srcset="
+        /src/assets/logo/netflix@1x.png 1x,
+        /src/assets/logo/netflix@2x.png 2x
+      "
+    />
+
+    <picture>
+      <img
+        src="/src/assets/rwd/small-550.jpg"
+        alt=""
+        srcset="
+          /src/assets/rwd/small-550.jpg    550w,
+          /src/assets/rwd/medium-1024.jpg 1024w,
+          /src/assets/rwd/large-1600.jpg  1600w,
+          /src/assets/rwd/normal-1920.jpg 1920w
+        "
+        sizes="(max-width: 760px) 550px, 100vw"
+      />
+    </picture>
+  </body>
+</html>
